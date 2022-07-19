@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    /*background: url('./assets/images/telecaller.jpg');*/
+    font-size: 14px;
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+    background-repeat: no-repeat;
+    padding-left: 34%;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: #fff;
+    display:flex;
+    background-color: rgba(20,0,185,0.34);
+    font-size: 21px;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: hsl(249, 100%, 35%);
+    color: white;
+    background-color: rgba(45, 249, 52, 0.34);
+    
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    outline: none;
+    padding-bottom: 5px;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 5px 15px 0px rgba(20,0,185,0.3);
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid#1c00b5;
+    color: #1c00b5;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+tr td:first-child{
+    padding-right: 30px;
+}
+
+tr td{
+    padding-top: 40px;
+}
+
+.container .contact-box p a{
+
+    padding-left:25% ;
+}
+.container h1{
+    font-weight: bold bolder;
+    font-size: xx-large;
+}
+.container h1 p{
+font-weight: bold;    
+}

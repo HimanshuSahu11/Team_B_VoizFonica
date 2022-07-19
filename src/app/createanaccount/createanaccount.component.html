@@ -1,0 +1,66 @@
+<app-header></app-header>
+<body>
+    <div class="wrapper">
+        <a routerLink="/home">
+            <div class="title">Create an Account</div>
+        </a>
+        <form #Registerform="ngForm" (ngSubmit)="registerUser()">
+            <div class="form">
+                <div class="input_field">
+                    <label>First Name</label>
+                    <input type="text" name="firstname" class="input" [(ngModel)]="user.firstname">
+                </div>
+                <div class="input_field">
+                    <label>Last Name</label>
+                    <input type="text" name="lastname" class="input" [(ngModel)]="user.lastname">
+                </div>
+                <div class="input_field">
+                    <label>Email</label>
+                    <input type="email" name="email" class="input" [(ngModel)]="user.email">
+                </div>
+                <div class="input_field">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" class="input" [(ngModel)]="user.dob">
+                </div>
+                <!-- <div class="input_field">
+            <label>Gender</label>
+            <div class="custom_select" name="gender" [(ngModel)]="user.gender">
+                <select >
+                    <option value="" >Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>-->
+        <div class="input_field">
+            <label>Gender</label>
+            <input type="text" name="gender" class="input" [(ngModel)]="user.gender">
+        </div>
+                <div class="input_field">
+                    <label>Phone Number</label>
+                    <input type="text" name="phoneno" class="input" [(ngModel)]="user.phoneno">
+                </div>
+                <div class="input_field">
+                    <label>Password</label>
+                    <input type="password" name="password" class="input" [(ngModel)]="user.password">
+                </div>
+                <div class="input_field">
+                    <label>Confirm Password</label>
+                    <input type="password" class="input">
+                </div>
+                <div class="input_field">
+                    <label class="check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p> I Agree</p>
+                </div>
+                <div class="input_field">
+                     <input  type="submit" value="Create Account" class="btn" >
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<router-outlet></router-outlet>

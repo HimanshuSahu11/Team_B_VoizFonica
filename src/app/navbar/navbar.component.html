@@ -1,0 +1,28 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid"> <a class="navbar-brand" href="#">Voiz</a> <button class="navbar-toggler"
+            type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" routerLink="/login"
+                        *ngIf="!loginStatus">login</a> </li>
+                <li class="nav-item">
+                    <!-- Just an example. It need not be same like this-->
+                    <!--if you want to show some links related to only customer then follow this login--> <a
+                        class="nav-link active" aria-current="page" routerLink="" *ngIf="loginStatus">some links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink=""
+                        *ngIf="loginStatus && !isAdmin()">customer link</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" routerLink=""
+                        *ngIf="loginStatus && isAdmin()">admin link</a> </li>
+                <li class="nav-item">
+                    <!--   *ngIf="loginStatus && user.role==='admin' "  or call a function in ts file--> <a
+                        class="nav-link active" aria-current="page" routerLink="/logout" *ngIf="loginStatus">logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

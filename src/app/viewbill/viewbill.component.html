@@ -1,0 +1,30 @@
+<app-sidebarforlogin></app-sidebarforlogin>
+
+<h1 style="padding-left: 170px;">View your Bill</h1>
+<form ViewBillform="ngForm" (ngSubmit)="ViewBillform()">
+<p>
+<table>
+    <p style="color: black;"><label class="form-label" for="emailaddress"> Enter your Phone Number</label></p>
+<input type="text" class="form-control" name="phoneno" placeholder="Enter Your Number " [(ngModel)]="viewbill.phoneno" >
+<a ><input type="submit" name="" value="Submit" ></a>
+    <tr id="header">
+        <th>Phone Number</th>
+        <th>Bill Id</th>
+        <th>Product</th>
+        <th>Plan</th>
+        <th>Recharge Date</th>
+        <th>Amount Due</th>
+
+    </tr>
+    <tbody>
+        <tr *ngFor="let view of viewbills">
+            <td>{{view.phoneno}}</td>
+            <td>{{view.billid}}</td>
+            <td>{{view.product}}</td>
+            <td>{{view.plan}}</td>
+            <td>{{view.rechargedate}}</td>
+            <td>{{view.amountdue}}</td>
+        </tr>
+    </tbody>
+</table>
+</form>

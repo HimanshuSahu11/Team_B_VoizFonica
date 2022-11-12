@@ -1,0 +1,98 @@
+<style>
+  .text-center {
+      font-size: 42px;
+      font-family: cursive;
+      text-align: center;
+      padding: 100px;
+
+  }
+
+  @keyframes animatedBackground_b {
+      0% {
+          color: #ff8b00
+      }
+
+      10% {
+          color: #e8ff00
+      }
+
+      20% {
+          color: #5dff00
+      }
+
+      30% {
+          color: #00ff2e
+      }
+
+      40% {
+          color: #00ffb9
+      }
+
+      50% {
+          color: #00b9ff
+      }
+
+      60% {
+          color: #002eff
+      }
+
+      70% {
+          color: #5d00ff
+      }
+
+      80% {
+          color: #e800ff
+      }
+
+      90% {
+          color: #ff008b
+      }
+
+      100% {
+          color: #ff0000
+      }
+  }
+</style>
+
+<h1 class="text-center" style="color: darkblue; padding: 2%;">GET A NEW SIM CARD</h1>
+<form connectionform="ngForm" (ngSubmit)="connectionform()">
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputname">Name</label>
+      <input type="text" class="form-control" id="inputname" name="name"  placeholder="Please enter your Name" [(ngModel)]="connection.name">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="email id">Email</label>
+      <input type="email" class="form-control" id="email id" name="email" placeholder="Please enter your Email" [(ngModel)]="connection.email">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputAddress">Alternate Phone Number</label>
+      <input type="text" class="form-control" id="inputAddress" name="alternatephoneno" placeholder="Please enter your Alternate Phone Number" [(ngModel)]="connection.alternatephoneno">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputname">Product</label>
+      <input type="text" class="form-control" id="inputname" name="product" placeholder="Please enter your Product " [(ngModel)]="connection.product">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputAddress">Aadhaar Number</label>
+      <input type="text" class="form-control" id="inputAddress" name="aadharno" placeholder="Please enter your Aadhaar" [(ngModel)]="connection.aadharno">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputAddress2">Address </label>
+      <input type="text" class="form-control" id="inputAddress2" name="address" placeholder="Please enter your Address" [(ngModel)]="connection.address">
+  </div>
+
+  <div class="form-group col-md-6 my-3">
+      <label for="inputZip">Pin Code</label>
+      <input type="text" class="form-control" id="inputZip" name="pincode" placeholder="Please enter yourPincode" [(ngModel)]="connection.pincode">
+  </div>
+
+  <br>
+  <p><button type="submit" class="btn btn-primary">SEND</button><a href="./home"><button type="button"
+              class="btn btn-danger">HOME</button></a></p>
+</form>

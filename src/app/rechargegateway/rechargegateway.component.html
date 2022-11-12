@@ -1,0 +1,31 @@
+<div class="loginbox" style="padding-top: 4%;">
+    <a routerLink="/home"><img src="./assets/images/recharge-icon.png" alt="Login Logo" class="icon"></a>
+    <h1 style="color: black;">Recharge Your VOIZZ!!!</h1>
+
+        <form ViewDataplanform="ngForm" (ngSubmit)="ViewDataplanform()">
+            <input type="text" class="form-control" name="" placeholder="Enter Your Mobile Number">
+            <input type="text" class="form-control" name="rupee" placeholder="Enter the amount to recharge.." [(ngModel)]="dataplan.rupee">
+            <p>
+                <a><input type="submit" name="" value="Submit"></a>
+                <a routerLink="/home"><input type="button" name="" value="Cancel"></a>
+            </p>
+            <table>
+            <tr id="header">
+                <th>Rupee|</th>
+                <th>Days|</th>
+                <th>Datadescription</th>  
+            </tr>
+            <tr *ngFor="let dp of dataplans">
+            <td>{{dp.rupee}}</td>
+            <td>{{dp.days}}</td>
+            <td>{{dp.datadescription}}</td>
+
+            <a routerLink="/pay"><input type="button" name="" value="Recharge" style="background-color: red;"></a>
+
+            </tr>
+        </table>
+
+        </form>
+
+    
+</div>

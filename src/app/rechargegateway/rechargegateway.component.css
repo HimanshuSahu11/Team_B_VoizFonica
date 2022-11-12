@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-size:2500px ;
+    background-position:unset;
+    font-family: sans-serif;
+    justify-content: center;
+    background-repeat:no-repeat ;
+
+}
+
+.loginbox{
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.8) ;
+    border-radius: 18px ;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.icon{
+width: 100px;
+height: 100px;
+border: radius 50% ;
+margin-top:  10;
+margin-left: 40%;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px ;
+    font-style: italic;
+    
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.loginbox a:hover{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.1;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="email"], input[type="password"]{
+    border: none;
+    border-width: 1px;
+    border-bottom: 1px solid #000;
+    background: transparent ;
+    outline: none;
+    height: 40px;
+    color:#000;
+    
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px ;
+    border-radius: 20px;
+}
+.loginbox p a input[type="button"]{
+border: none;
+outline: none;
+height: 40px;
+background: #000000;
+color: #fff;
+font-size: 18px ;
+border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover
+
+{
+cursor:pointer;
+background: #ffc107;
+color: #000;
+transition: 0.2s;
+}
+
+.loginbox p a input[type="button"]:hover
+{
+cursor:pointer;
+background: #ebb100;
+color: rgb(162, 5, 5);
+transition: 0.2s;
+}
+.loginbox input[type="text"]:hover
+{
+cursor:pointer;
+background: rgb(195, 201, 188,0.5);
+border-radius: 16px;
+color: #000;
+transition: 0.2s;
+}
+.loginbox input[type="password"]:hover
+{
+cursor:pointer;
+background: rgba(195, 201, 188,0.5);
+border-radius: 16px;
+color: #000;
+transition: 0.2s;
+}
+
+.loginbox a{
+    text-decoration: none ;
+    font-size: 16px;
+    line-height: 20px;
+    color: darkgray;
+}

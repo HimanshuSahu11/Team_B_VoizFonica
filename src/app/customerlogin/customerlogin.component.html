@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="loginbox" style="padding-top: 120px;">
+    <a routerLink="/home" style="margin-left: 40%;"><img src="./assets/images/corporate login icon.jpg" alt="Login Logo"
+            class="icon"></a>
+    <h1 style="color: black;">Welcome Back!!!</h1>
+    <form loginform="ngForm" (ngSubmit)="loginUser()">
+        <p style="color: black;"><label class="form-label" for="emailaddress">Email address</label></p>
+        <input class="form-control" type="email" name="email" placeholder="Enter your email address"
+            [(ngModel)]="user.email">
+        <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger">
+
+            <div *ngIf="f['email'].errors && f['email'].errors['required']">*Email is required*</div>
+
+        </div>
+        <p style="color: black;"><label class="form-label" for="password">Password</label></p>
+        <input class="form-control" type="password" name="password" placeholder="Enter your password"
+            [(ngModel)]="user.password">
+        <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
+
+            <div *ngIf="f['password'].errors && f['password'].errors['required']">*Password is required*</div>
+
+        </div>
+            <input type="submit" value="login">
+            <a routerLink="/forgotpassword" style="color: black;">Forgot Password?</a><br>
+            <a routerLink="/createanaccount" style="color: black;">Don't have an Account? Create One</a>
+            <div style="color: red;">
+                {{errorMessage}}
+            </div>
+    </form>
+</div>

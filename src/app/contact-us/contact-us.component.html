@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="container" style="padding-top: 6%;">
+    <h1 style=" font: 100;">Contact Us</h1>
+    <p style="font-weight: bold; font-size: larger;">We would love to respond to your queries and help you succeed<br>
+        Feel free to get in touch with us.</p>
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3 style="color: white;">Send your request</h3>
+            <form contactusform="ngForm" (ngSubmit)="contactusform()">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label style="font-weight: bold;">Name</label>
+                        <input type="text" name="name" placeholder="eg:- John Smith" [(ngModel)]="contactus.name">
+                    </div>
+                    <div class="input-group">
+                        <label style="font-weight: bold;">Phone</label>
+                        <input type="text" name="phoneno" placeholder="eg:- +91 900 8888 777" [(ngModel)]="contactus.phoneno">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label style="font-weight: bold;">Email</label>
+                        <input type="email" name="email" placeholder="eg:- johnsmith@gmail.com" [(ngModel)]="contactus.email">
+                    </div>
+                    <div class="input-group">
+                        <label style="font-weight: bold;">Subject</label>
+                        <input type="text" name="subject" placeholder="eg:- Product" [(ngModel)]="contactus.subject">
+                    </div>
+                </div>
+
+                <label style="font-weight: bold;">Message</label>
+                <textarea rows="5" name="message" type="text" placeholder="Your Message" [(ngModel)]="contactus.message"></textarea>
+
+                <p><button type="submit">SEND</button><a routerLink="/home"><button type="button">HOME</button></a></p>
+            </form>
+        </div>
+
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+            <table>
+                <tr>
+                    <td style="font-weight: bold;">Email</td>
+                    <td>VoizFonica@gmail.com</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Helpline Number</td>
+                    <td>1200 4300 9700</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Address</td>
+                    <td>E-212, Ground Floor, 7th cross street <br>
+                    Near Pari chowk, Greater Noida <br>
+                    Uttar Pradersh, 201310 </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</div>

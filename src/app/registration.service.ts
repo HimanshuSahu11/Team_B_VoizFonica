@@ -57,7 +57,10 @@ public newconnectionFromRemote( connection: NewConnection): Observable < any > {
 getBillByPhoneno(phoneno:number):Observable<any>{
   return this._http.get("http://localhost:8080/bill/getbill/"+phoneno);
 }
+<<<<<<< HEAD
 getDataplanByRupee(rupee:number):Observable<any>{
   return this._http.get("http://localhost:8080/dataplan/getby/"+rupee);
 }
+=======
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 }

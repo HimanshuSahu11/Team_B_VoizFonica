@@ -9,7 +9,10 @@ import { DongleComponent } from './dongle/dongle.component';
 import { DonglecardComponent } from './donglecard/donglecard.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+<<<<<<< HEAD
 import { ForgotverificationComponent } from './forgotverification/forgotverification.component';
+=======
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
@@ -58,8 +61,12 @@ const routes: Routes = [
   {path: 'prepaidcard', component:PrepaidcardComponent},
   {path: 'postpaidcard',component:PostpaidcardComponent},
   {path: 'donglecard', component:DonglecardComponent},
+<<<<<<< HEAD
   {path:'services',component:ServicesComponent},
   {path:'forgotverification',component:ForgotverificationComponent}
+=======
+  {path:'services',component:ServicesComponent}
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 ];
 
 @NgModule({

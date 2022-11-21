@@ -24,8 +24,12 @@ export class CustomerloginComponent implements OnInit {
   constructor(private _service: RegistrationService,
     private loginStatus: LoginstatusService,
     private router: Router,
+<<<<<<< HEAD
     private formBuilder: FormBuilder
     ) { }
+=======
+    private formBuilder: FormBuilder) { }
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 
 
   get f() {
@@ -66,8 +70,11 @@ export class CustomerloginComponent implements OnInit {
           console.log(Response);
           this.loginStatus.changeLoginStatus(true);
           this.loginStatus.changeLoginStatus(Response);
+<<<<<<< HEAD
           localStorage.setItem('phoneno',Response.phoneno);
           this.loginStatus.changeUserStatus(Response);
+=======
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
           this.router.navigateByUrl('/loginpage');
           this.errorMessage = "Sucessfully logged in!"
         }

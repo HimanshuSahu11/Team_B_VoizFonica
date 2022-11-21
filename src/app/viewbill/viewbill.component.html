@@ -5,8 +5,13 @@
 <p>
 <table>
     <p style="color: black;"><label class="form-label" for="emailaddress"> Enter your Phone Number</label></p>
+<<<<<<< HEAD
 <input type="text" class="form-control" name="phoneno" placeholder="Enter Your Number " [(ngModel)]="viewbill.phoneno" >
 <a ><input type="submit" name="" value="Submit" ></a>
+=======
+<input type="text" class="form-control" name="phoneno" placeholder="Enter Your Number " >
+<a ><input type="button" name="" value="Submit" (ngSubmit)="ViewBillform()"></a>
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
     <tr id="header">
         <th>Phone Number</th>
         <th>Bill Id</th>
@@ -17,6 +22,7 @@
 
     </tr>
     <tbody>
+<<<<<<< HEAD
         <tr *ngFor="let view of viewbills">
             <td>{{view.phoneno}}</td>
             <td>{{view.billid}}</td>
@@ -24,6 +30,15 @@
             <td>{{view.plan}}</td>
             <td>{{view.rechargedate}}</td>
             <td>{{view.amountdue}}</td>
+=======
+        <tr *ngFor="let view of viewbill">
+            <td>{{view.viewphoneno}}</td>
+            <td>{{view.viewbillid}}</td>
+            <td>{{view.viewproduct}}</td>
+            <td>{{view.viewplan}}</td>
+            <td>{{view.viewrechargedate}}</td>
+            <td>{{view.viewamountdue}}</td>
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
         </tr>
     </tbody>
 </table>

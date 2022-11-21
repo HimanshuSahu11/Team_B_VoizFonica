@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { ActivatedRoute, Router } from '@angular/router';
 import { Dataplan } from '../dataplan';
 import { RegistrationService } from '../registration.service';
+=======
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 
 @Component({
   selector: 'app-rechargegateway',
@@ -10,6 +13,7 @@ import { RegistrationService } from '../registration.service';
 })
 export class RechargegatewayComponent implements OnInit {
 
+<<<<<<< HEAD
   dataplan:Dataplan={id:0 ,
     rupee:0,
     days:'',
@@ -35,4 +39,11 @@ export class RechargegatewayComponent implements OnInit {
     );
     
   }
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 }

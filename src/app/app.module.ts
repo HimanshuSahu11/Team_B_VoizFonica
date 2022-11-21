@@ -36,7 +36,10 @@ import { RechargegatewayComponent } from './rechargegateway/rechargegateway.comp
 import { PrepaidcardComponent } from './prepaidcard/prepaidcard.component';
 import { PostpaidcardComponent } from './postpaidcard/postpaidcard.component';
 import { DonglecardComponent } from './donglecard/donglecard.component';
+<<<<<<< HEAD
 import { ForgotverificationComponent } from './forgotverification/forgotverification.component';
+=======
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
 
 
 @NgModule({
@@ -72,8 +75,12 @@ import { ForgotverificationComponent } from './forgotverification/forgotverifica
     RechargegatewayComponent,
     PrepaidcardComponent,
     PostpaidcardComponent,
+<<<<<<< HEAD
     DonglecardComponent,
     ForgotverificationComponent
+=======
+    DonglecardComponent
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
   ],
   imports: [
     BrowserModule,

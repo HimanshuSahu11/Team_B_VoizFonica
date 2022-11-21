@@ -41,7 +41,12 @@ export class ForgotpasswordComponent implements OnInit {
     this._service.forgotUserFromRemote(this.user).subscribe(
       data => { console.log("response recieved");
       console.log(this.user.email);
+<<<<<<< HEAD
       this.router.navigateByUrl('/forgotverification');
+=======
+      localStorage.setItem('email',this.user.email);
+      this.router.navigateByUrl('newpassword');
+>>>>>>> 3947216bfbdfc65954ec157ba6ec413d1a78b599
     },
       
       error => {console.log("exception occured")
